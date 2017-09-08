@@ -599,7 +599,7 @@ abstract class DataTableAbstract implements DataTable, Arrayable, Jsonable
             return resolve('datatables.transformer')->transform(
                 $results,
                 $this->transformer,
-                $this->serializer ?? null
+                $this->serializer ?: null
             );
         }
 
